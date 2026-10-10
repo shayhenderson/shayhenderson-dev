@@ -129,8 +129,6 @@ export const projects: Project[] = [
     blurb:
       'Audited SecurityBot surface by surface and documented the product from the ground up, turning scattered docs into a finished GitBook knowledge base, structured to stay maintainable and extensible.',
     tags: ['GitBook', 'Contract'],
-    href: 'https://securitybot.gitbook.io/securitybot-knowledge-hub',
-    linkLabel: 'securitybot.gitbook.io',
   },
 ];
 
