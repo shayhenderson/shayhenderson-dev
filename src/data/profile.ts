@@ -9,7 +9,10 @@ export const identity = {
   name: 'Shay Henderson',
   role: 'Infrastructure & Cloud',
   location: 'Scotland, UK',
-  availability: 'Open to full-time, part-time and contract work',
+  /** current role: the status line on the home page */
+  current: 'Trust & Safety Specialist at GitHub',
+  /** the same fact as a sentence, for copy that follows the pitch */
+  currentSentence: 'Currently a Trust & Safety Specialist at GitHub.',
   pitch:
     'I keep production systems healthy and build for the web: seven years of incident response, automation, internal tooling and production frontends across Azure, GCP and Cloudflare.',
   email: 'contact@shayhenderson.dev',
@@ -30,6 +33,14 @@ export interface Job {
 }
 
 export const experience: Job[] = [
+  {
+    company: 'GitHub',
+    title: 'Trust & Safety Specialist',
+    dates: 'Oct 2026 – present',
+    where: 'Remote',
+    highlights: ['Joined the Trust & Safety team in October 2026.'],
+    bullets: ['Joined the Trust & Safety team in October 2026.'],
+  },
   {
     company: 'jpg.store',
     title: 'QA & Support Engineer',
