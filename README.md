@@ -12,3 +12,7 @@ npm run dev       # dev server at localhost:4321
 npm run build     # static build to dist/
 npm run preview   # serve the built site
 ```
+
+## Licence
+
+MIT, see [LICENSE](LICENSE).

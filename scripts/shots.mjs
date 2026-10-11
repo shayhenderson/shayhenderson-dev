@@ -9,8 +9,8 @@ const targets = [
   { name: 'index-mobile-dark', path: '/', width: 430, height: 932, scale: 3 },
   { name: 'index-desktop-light', path: '/', width: 1440, height: 900, theme: 'light' },
   { name: 'index-mobile-light', path: '/', width: 430, height: 932, scale: 3, theme: 'light' },
-  { name: 'cv-desktop-dark', path: '/cv', width: 1440, height: 900 },
-  { name: 'cv-mobile-dark', path: '/cv', width: 430, height: 932, scale: 3 },
+  { name: 'cv-desktop-dark', path: '/cv/', width: 1440, height: 900 },
+  { name: 'cv-mobile-dark', path: '/cv/', width: 430, height: 932, scale: 3 },
 ];
 
 const browser = await chromium.launch();

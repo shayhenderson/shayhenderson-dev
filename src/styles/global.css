@@ -301,6 +301,11 @@ p {
     --on-amber: oklch(1 0 0);
     --green: oklch(0.45 0.12 150);
   }
+  /* Tailwind sizes are rem-based: scale the root so the whole CV
+     tightens in proportion and the PDF holds to two pages */
+  html {
+    font-size: 15.5px;
+  }
   body {
     font-size: 10.5pt;
     line-height: 1.45;
@@ -321,10 +326,10 @@ p {
     padding-block: 0;
   }
   .cv-page h2 {
-    margin-top: 1.25rem;
+    margin-top: 1rem;
   }
   .cv-page h2 + * {
-    margin-block-start: 1.5rem;
+    margin-block-start: 1.1rem;
   }
   .cv-page > header + ul {
     margin-block-start: 0.6rem;
@@ -344,12 +349,23 @@ p {
   }
   .cv-page dl > :not(:last-child),
   .cv-page .space-y-4 > :not(:last-child) {
-    margin-block-end: 0.55rem;
+    margin-block-end: 0.45rem;
   }
   .cv-page .space-y-10 > :not(:last-child) {
-    margin-block-end: 1.1rem;
+    margin-block-end: 0.85rem;
   }
   .cv-page .space-y-10 > :not(:first-child) {
     margin-block-start: 0;
+  }
+  /* a long role may continue onto the next page, but never mid-bullet and
+     never with its title line stranded at the foot of a page */
+  .cv-page article {
+    break-inside: auto;
+  }
+  .cv-page article li {
+    break-inside: avoid;
+  }
+  .cv-page article > :first-child {
+    break-after: avoid;
   }
 }

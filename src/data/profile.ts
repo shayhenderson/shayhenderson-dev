@@ -9,7 +9,10 @@ export const identity = {
   name: 'Shay Henderson',
   role: 'Infrastructure & Cloud',
   location: 'Scotland, UK',
-  availability: 'Open to full-time, part-time and contract work',
+  /** current role: the status line on the home page */
+  current: 'Trust & Safety Specialist at GitHub',
+  /** the same fact as a sentence, for copy that follows the pitch */
+  currentSentence: 'Currently a Trust & Safety Specialist at GitHub.',
   pitch:
     'I keep production systems healthy and build for the web: seven years of incident response, automation, internal tooling and production frontends across Azure, GCP and Cloudflare.',
   email: 'contact@shayhenderson.dev',
@@ -30,6 +33,14 @@ export interface Job {
 }
 
 export const experience: Job[] = [
+  {
+    company: 'GitHub',
+    title: 'Trust & Safety Specialist',
+    dates: 'Oct 2026 – present',
+    where: 'Remote',
+    highlights: ['Joined the Trust & Safety team in October 2026.'],
+    bullets: ['Joined the Trust & Safety team in October 2026.'],
+  },
   {
     company: 'jpg.store',
     title: 'QA & Support Engineer',
@@ -125,12 +136,12 @@ export const projects: Project[] = [
     note: 'Taken offline when jpg.store ceased operations.',
   },
   {
-    name: 'SecurityBot Knowledge Hub',
+    name: 'SecurityBot (now Daxeon) Knowledge Hub',
     blurb:
       'Audited SecurityBot surface by surface and documented the product from the ground up, turning scattered docs into a finished GitBook knowledge base, structured to stay maintainable and extensible.',
     tags: ['GitBook', 'Contract'],
-    href: 'https://securitybot.gitbook.io/securitybot-knowledge-hub',
-    linkLabel: 'securitybot.gitbook.io',
+    href: 'https://daxeon.gitbook.io/daxeon-knowledge-hub',
+    linkLabel: 'daxeon.gitbook.io',
   },
 ];
 

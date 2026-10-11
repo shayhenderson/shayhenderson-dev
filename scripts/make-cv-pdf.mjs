@@ -6,7 +6,7 @@ const base = process.argv[2] ?? 'http://localhost:4321';
 const browser = await chromium.launch();
 const page = await browser.newPage();
 await page.emulateMedia({ media: 'print' });
-await page.goto(`${base}/cv`, { waitUntil: 'networkidle' });
+await page.goto(`${base}/cv/`, { waitUntil: 'networkidle' });
 await page.pdf({
   path: 'public/shay-henderson-cv.pdf',
   format: 'A4',
