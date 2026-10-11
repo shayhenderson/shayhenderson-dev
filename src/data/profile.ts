@@ -136,10 +136,12 @@ export const projects: Project[] = [
     note: 'Taken offline when jpg.store ceased operations.',
   },
   {
-    name: 'SecurityBot Knowledge Hub',
+    name: 'SecurityBot (now Daxeon) Knowledge Hub',
     blurb:
       'Audited SecurityBot surface by surface and documented the product from the ground up, turning scattered docs into a finished GitBook knowledge base, structured to stay maintainable and extensible.',
     tags: ['GitBook', 'Contract'],
+    href: 'https://daxeon.gitbook.io/daxeon-knowledge-hub',
+    linkLabel: 'daxeon.gitbook.io',
   },
 ];
 
