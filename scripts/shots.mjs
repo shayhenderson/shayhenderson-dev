@@ -13,7 +13,7 @@ const targets = [
   { name: 'cv-mobile-dark', path: '/cv/', width: 430, height: 932, scale: 3 },
 ];
 
-const browser = await chromium.launch();
+const browser = await chromium.launch({ chromiumSandbox: true });
 for (const t of targets) {
   const ctx = await browser.newContext({
     viewport: { width: t.width, height: t.height },

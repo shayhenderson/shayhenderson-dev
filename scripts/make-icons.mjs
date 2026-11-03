@@ -16,7 +16,7 @@ const targets = [
   { path: 'public/apple-touch-icon.png', size: 180, markup: squareSvg },
 ];
 
-const browser = await chromium.launch();
+const browser = await chromium.launch({ chromiumSandbox: true });
 
 /** @param {number} size @param {string} markup @returns {Promise<Buffer>} */
 async function render(size, markup) {
