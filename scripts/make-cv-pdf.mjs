@@ -3,7 +3,7 @@
 import { chromium } from 'playwright';
 
 const base = process.argv[2] ?? 'http://localhost:4321';
-const browser = await chromium.launch();
+const browser = await chromium.launch({ chromiumSandbox: true });
 const page = await browser.newPage();
 await page.emulateMedia({ media: 'print' });
 await page.goto(`${base}/cv/`, { waitUntil: 'networkidle' });
